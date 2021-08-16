@@ -1,17 +1,17 @@
-import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import './Navbar.css';
 
 export default function Navbar() {
   return (
     <div className="Navbar">
-      <Link to="/">logo</Link>
+      <HashLink smooth to="/#">logo</HashLink>
       <div>
-        <Link to="/about">About</Link>
-        <Link to="/experiences">Experiences</Link>
-        <Link to="/projects">Projects</Link>
+        <HashLink smooth to="/#About">About</HashLink>
+        <HashLink smooth to="/#Experiences">Experiences</HashLink>
+        <HashLink smooth to="/#Projects">Projects</HashLink>
       </div>
      
-      <Link to="/contact">Contact</Link>
+      <HashLink to="/#contact">Contact</HashLink>
     </div>
   )
 }
