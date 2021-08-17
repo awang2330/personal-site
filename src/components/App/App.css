@@ -2,3 +2,10 @@
   overflow-x: hidden;
   width: 100vw;
 }
+
+#Home, 
+#About, 
+#Experiences, 
+#Projects {
+  padding: 120px 70px;
+}
