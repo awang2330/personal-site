@@ -1,4 +1,4 @@
-import home from '../../assets/home.jpg'
+import home from '../../assets/landing.jpg'
 import './Home.css'
 export default function Home() {
   return (

@@ -9,18 +9,32 @@
 }
 .left-section {
   width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 .right-section {
   width: 50%;
+  color: #000;
   text-align: center;
+  background-color: #FFE8BB;
+  border: 2px solid #000;
+  border-radius: 10px;
+  padding: 20px;
+  margin-left: 10px;
+  height: 400px;
 }
 
 .ex-btn {
-  border: 2px solid transparent;
+  border: 2px solid #fff;
   text-align: center;
+  border-radius: 5px;
+  padding: 6px;
 }
 .active {
-  border-bottom: 2px solid #000;
+  /* border: 2px solid #000; */
+  color: #000;
+  background-color: #FFE8BB;
 }
 
 .desc {
