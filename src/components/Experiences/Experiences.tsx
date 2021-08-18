@@ -17,6 +17,7 @@ export default function Experiences() {
             >
               <div>{e.company}</div>
               <div>{e.role}</div>
+              <hr className={`${active === i ? `hr` : ``}`}></hr>
             </div>
           ))}
         </div>
