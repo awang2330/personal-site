@@ -6,31 +6,33 @@ export default function Experiences() {
   const [active, setActive] = useState(0)
   return (
     <div id="Experiences">
-      <div className="section-title">Experiences</div>
-      <div className="table">
-         <div className="left-section">
-          {experience.map((e, i) => (
-            <div 
-              key={i} 
-              className={`ex-btn ${active === i ? `active` : ``}`} 
-              onClick={e => setActive(i)}
-            >
-              <div>{e.company}</div>
-              <div>{e.role}</div>
-              <hr className={`${active === i ? `hr` : ``}`}></hr>
-            </div>
-          ))}
-        </div>
-        <div className="right-section">
-          <div>{experience[active].date}</div>
-          <div>{experience[active].location}</div>
-          <div className="desc">
-            {experience[active].description.map(e => (
-              <p>&#9723; {e}</p>
+      <div>
+        <div className="section-title">Experiences</div>
+        <div className="table">
+          <div className="left-section">
+            {experience.map((e, i) => (
+              <div 
+                key={i} 
+                className={`ex-btn ${active === i ? `active` : ``}`} 
+                onClick={e => setActive(i)}
+              >
+                <div>{e.company}</div>
+                <div>{e.role}</div>
+                <hr className={`${active === i ? `hr` : ``}`}></hr>
+              </div>
             ))}
           </div>
+          <div className="right-section">
+            <div>{experience[active].date}</div>
+            <div>{experience[active].location}</div>
+            <div className="desc">
+              {experience[active].description.map(e => (
+                <p>&#9723; {e}</p>
+              ))}
+            </div>
+          </div>
         </div>
-      </div>
+      </div> 
     </div>
   )
 }

@@ -3,19 +3,17 @@
   width: 100vw;
 }
 
-#Home, 
 #About, 
 #Experiences, 
 #Projects {
-  padding: 0 70px;
+  padding: 0 100px;
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 
 .section-title {
   font-size: 40px;
-  margin-left: 100px;
   font-family: 'Overpass Mono', monospace;
+  margin: 100px 0 20px;
 }

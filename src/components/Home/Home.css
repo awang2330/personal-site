@@ -10,9 +10,9 @@
 
 .home-text {
   font-family: 'Overpass Mono', monospace;
-  margin-left: 100px;
+  margin: 150px;
   font-size: 45px;
-  width: 60%;
+  width: 50%;
 }
 
 .home-text p:nth-child(3) {
