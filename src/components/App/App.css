@@ -7,5 +7,15 @@
 #About, 
 #Experiences, 
 #Projects {
-  padding: 120px 70px;
+  padding: 0 70px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section-title {
+  font-size: 40px;
+  margin-left: 100px;
+  font-family: 'Overpass Mono', monospace;
 }
