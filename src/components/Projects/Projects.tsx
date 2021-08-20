@@ -1,22 +1,33 @@
 
+import reciplan from '../../assets/reciplan.png'
+import lifetracker from '../../assets/lifetracker.png'
 import './Projects.css';
 export default function Projects() {
   return (
     <div id="Projects">
       <div className="section-title">Projects</div>  
       <div>
-        {projects.map(e => (
-          <div>
-            <div>
+        {projects.map((e, i) => (
+          <div key={i} className="proj">
+            <div className="proj-img">
               <img src={e.image} alt={e.name}></img>
             </div>
-            <div>
+            <div className="proj-text-overlay">
               <div className="proj-name">{e.name}</div>
+              <div className="proj-lan">
+                {e.languages.map(e => (
+                  <span>{e}, </span>
+                ))}
+              </div>
+              <div className="proj-desc">
+                {e.description.map(e => (
+                  <div>&#9723; {e}</div>
+                ))}
+              </div>
             </div>
           </div>
         ))}
       </div>
-      
     </div>
   )
 }
@@ -24,7 +35,7 @@ export default function Projects() {
 const projects = [
   {
     name: "Reciplan",
-    image: "../../assets/logo.svg",
+    image: reciplan,
     github: "https://github.com/reci-plan/capstone",
     link: "http://reciplan.surge.sh/",
     languages: ["React.js", "Node.js", "Express", "PostgreSQL"],
@@ -35,9 +46,9 @@ const projects = [
   },
   {
     name: "LifeTracker",
-    image: "../../assets/logo.svg",
-    github: "",
-    link: "",
+    image: lifetracker,
+    github: "https://github.com/awang2330/LifeTracker-Application",
+    link: "http://lifetracker-sun.surge.sh",
     languages: ["React.js", "Node.js", "Express", "PostgreSQL"],
     description: [
     ]
