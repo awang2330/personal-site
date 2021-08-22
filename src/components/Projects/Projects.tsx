@@ -1,32 +1,48 @@
 
 import reciplan from '../../assets/reciplan.png'
 import lifetracker from '../../assets/lifetracker.png'
+
 import './Projects.css';
 export default function Projects() {
   return (
     <div id="Projects">
-      <div className="section-title">Projects</div>  
       <div>
-        {projects.map((e, i) => (
-          <div key={i} className="proj">
-            <div className="proj-img">
-              <img src={e.image} alt={e.name}></img>
-            </div>
-            <div className="proj-text-overlay">
-              <div className="proj-name">{e.name}</div>
-              <div className="proj-lan">
-                {e.languages.map(e => (
-                  <span>{e}, </span>
-                ))}
+        <div className="section-title">Projects</div>  
+        <div>
+          {projects.map((e, i) => (
+            <div key={i} className="proj">
+              <div className={`proj-img ${i % 2 === 0 ? `` : `hidden`}`}>
+                <img src={e.image} alt={e.name}></img>
               </div>
-              <div className="proj-desc">
-                {e.description.map(e => (
-                  <div>&#9723; {e}</div>
-                ))}
+
+              <div className={`proj-text-overlay ${i % 2 === 0 ? `` : `proj-text-overlay-switch`}`}>
+                <a href={e.github}>
+                  {/* <img src="" alt=""></img> */}
+                  <div>github</div>
+                </a>
+                <a href={e.link}>
+                  {/* <img src="" alt=""></img> */}
+                  <div>link</div>
+                </a>
+                <div className="proj-name">{e.name}</div>
+                <div className="proj-lan">
+                  {e.languages.map(e => (
+                    <span>{e}, </span>
+                  ))}
+                </div>
+                <div className="proj-desc">
+                  {e.description.map(e => (
+                    <div>&#9723; {e}</div>
+                  ))}
+                </div>
+              </div>
+
+              <div className={`proj-img ${i % 2 === 0 ? `hidden` : ``}`}>
+                <img src={e.image} alt={e.name}></img>
               </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   )

@@ -1,5 +1,14 @@
 #Projects {
   min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+}
+
+#Projects > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .proj {
@@ -29,6 +38,10 @@
   justify-content: center;
 }
 
+.proj-text-overlay-switch {
+  left: 20px;
+}
+
 .proj-name {
   font-size: 30px;
   font-family: 'Overpass Mono', monospace;
@@ -39,4 +52,8 @@
 .proj-desc {
   font-size: 20px;
   padding: 40px;
+}
+
+.hidden {
+  display: none;
 }
