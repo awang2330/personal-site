@@ -1,4 +1,4 @@
-.Contact {
+#Contact {
   height: 100px;
   padding: 0 100px;
 
@@ -8,8 +8,12 @@
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-.Contact div {
+#Contact div {
   display: flex;
+}
+
+#Contact span {
+  font-family: 'Overpass mono', monospace;
 }
 .contact-links {
   width: 40px;

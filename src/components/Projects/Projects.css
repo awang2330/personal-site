@@ -71,3 +71,10 @@
 .proj-links a {
   margin: 0 10px;
 }
+
+.btn {
+  padding: 5px;
+  border-radius: 10px;
+  border: none;
+  background-color: #ECA978;
+}

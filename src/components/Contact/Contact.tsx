@@ -4,12 +4,12 @@ import linkedinIcon from '../../assets/linkedin-icon.svg';
 import './Contact.css'
 export default function Contact() {
   const contantInfo = {
-    github: "github.com/awang2330",
-    linkedIn: "linkedin.com/in/awang2330",
+    github: "https://github.com/awang2330",
+    linkedIn: "https://linkedin.com/in/awang2330",
     email: "anniewang0806@gmail.com"
   }
   return (
-    <div className="Contact">
+    <div id="Contact">
       <div>
         <a href={contantInfo.github} className="contact-links">
           <img src={githubIcon} alt="Github Icon"></img>
