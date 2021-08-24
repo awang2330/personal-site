@@ -1,3 +1,22 @@
 .Contact {
+  height: 100px;
+  padding: 0 100px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.Contact div {
+  display: flex;
+}
+.contact-links {
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+}
+
+.contact-links img {
   width: 100%;
 }

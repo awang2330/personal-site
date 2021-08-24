@@ -30,7 +30,7 @@
 
   position: relative;
   right: 20px;
-  top: 50px;
+  top: 5px;
 
   display: flex;
   flex-direction: column;
@@ -56,4 +56,18 @@
 
 .hidden {
   display: none;
+}
+
+.proj-links {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+}
+.proj-links-switch {
+  justify-content: flex-start;
+  margin-left: 20px;
+}
+
+.proj-links a {
+  margin: 0 10px;
 }
