@@ -18,7 +18,6 @@ export default function Projects() {
           {projects.map((e, i) => (
             <>
             {i < num ?
-           
               <div key={i} className="proj">
                 <div className={`proj-img ${i % 2 === 0 ? `` : `hidden`}`}>
                   <img src={e.image} alt={e.name}></img>
@@ -55,7 +54,10 @@ export default function Projects() {
             </>
           ))}
 
-          <button className={`btn ${num  > projects.length ? `hidden` : ``}`} onClick={handleOnClick}>Show More</button>
+          <div className="show-more">
+            <button className={`btn ${num  > projects.length ? `hidden` : ``}`} onClick={handleOnClick}>Show More</button>
+          </div>
+          
         </div>
       </div>
     </div>
