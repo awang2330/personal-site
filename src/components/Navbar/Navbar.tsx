@@ -2,7 +2,7 @@ import { HashLink } from 'react-router-hash-link';
 
 import resume from '../../assets/resume.pdf';
 
-import logo from '../../assets/icon.svg';
+import logo from '../../assets/logo.svg';
 import './Navbar.css';
 
 export default function Navbar() {

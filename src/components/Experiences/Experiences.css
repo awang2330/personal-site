@@ -23,10 +23,10 @@
 }
 .right-section {
   max-width: 750px;
-  color: #fff;
+  color: #000;
   text-align: center;
-  background-color: rgb(0, 0, 0, 0.3);
-  border: 5px solid #ECA978;
+  background-color: rgb(255, 255, 255, 0.4);
+  border: 5px solid #5E60CE;
   border-radius: 10px;
   padding: 30px;
   height: 400px;
@@ -44,13 +44,13 @@ hr {
 }
 .hr {
   visibility: visible;
-  background-color: #ECA978;
+  background-color: #5E60CE;
   border: none;
   width: 80px;
   height: 5px;
 }
 .active {
-  color: #fff;
+  color: #000;
   font-weight: 600;
 }
 

@@ -5,7 +5,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgb(7, 160, 195, 0.8);
 }
 
 #Contact div {

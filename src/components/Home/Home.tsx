@@ -1,8 +1,9 @@
-import home from '../../assets/landing.jpg'
+
+import clouds from '../../assets/clouds.jpg';
 import './Home.css'
 export default function Home() {
   return (
-    <div id="Home" style={{backgroundImage: `url(${home})`}}>
+    <div id="Home" style={{backgroundImage: `url(${clouds})`}}>
       <div className="home-text">
         <p>Hello!</p>
         <p>I am Ann Wang,</p>
