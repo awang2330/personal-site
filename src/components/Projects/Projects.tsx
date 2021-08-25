@@ -85,7 +85,7 @@ const projects = [
   },
   {
     name: "Student Store",
-    image: "",
+    image: "lifetracker",
     github: "https://github.com/awang2330/Student-Store",
     link: "",
     languages: ["React.js", "Node.js", "Express"],
@@ -94,7 +94,7 @@ const projects = [
   },
   {
     name: "Flixster",
-    image: "",
+    image: "lifetracker",
     github: "https://github.com/awang2330/Flixster",
     link: "http://lifetracker-sun.surge.sh",
     languages: ["HTML", "CSS", "Vanilla JS"],
@@ -103,7 +103,7 @@ const projects = [
   },
   {
     name: "Khichri",
-    image: "",
+    image: "lifetracker",
     github: "",
     link: "",
     languages: ["React.js"],
@@ -112,7 +112,7 @@ const projects = [
   },
   {
     name: "Serendipity Books",
-    image: "",
+    image: "lifetracker",
     github: "",
     link: "",
     languages: ["HTML", "CSS", "PHP"],

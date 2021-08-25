@@ -1,6 +1,8 @@
 import { HashLink } from 'react-router-hash-link';
 
-import logo from '../../assets/icon.svg'
+import resume from '../../assets/resume.pdf';
+
+import logo from '../../assets/icon.svg';
 import './Navbar.css';
 
 export default function Navbar() {
@@ -14,8 +16,12 @@ export default function Navbar() {
         <HashLink smooth to="/#Experiences">Experiences</HashLink>
         <HashLink smooth to="/#Projects">Projects</HashLink>
       </div>
-     
-      <HashLink to="/#Contact">Contact</HashLink>
+
+      <div>
+        <HashLink to="/#Contact">Contact</HashLink>
+        <a href={resume} target="blank" className="resume">Resume</a>
+      </div>
+      
     </div>
   )
 }
