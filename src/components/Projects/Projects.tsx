@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import placeholder from '../../assets/placeholder-img.jpg';
 import reciplan from '../../assets/reciplan.png';
 import lifetracker from '../../assets/lifetracker.png';
 import githubIcon from '../../assets/github-icon.svg';
@@ -20,17 +21,22 @@ export default function Projects() {
             {i < num ?
               <div key={i} className="proj">
                 <div className={`proj-img ${i % 2 === 0 ? `` : `hidden`}`}>
-                  <img src={e.image} alt={e.name}></img>
+                  <img src={e.image ? e.image : placeholder} alt={e.name}></img>
                 </div>
 
                 <div>
                   <div className={`proj-links ${i % 2 === 0 ? `` : `proj-links-switch`}`}>
-                    <a href={e.github}>
-                      <img src={githubIcon} alt="Github Icon"></img>
-                    </a>
-                    <a href={e.link}>
-                      <img src={linkIcon} alt="Linkedin Icon"></img>
-                    </a>
+                    {e.github ? 
+                      <a href={e.github}>
+                        <img src={githubIcon} alt="Github Icon"></img>
+                      </a>
+                    : null }
+
+                    {e.link ? 
+                      <a href={e.link}>
+                        <img src={linkIcon} alt="Linkedin Icon"></img>
+                      </a>
+                    : null }
                   </div>
                   <div className={`proj-text-overlay ${i % 2 === 0 ? `` : `proj-text-overlay-switch`}`}>
                     <div className="proj-name">{e.name}</div>
@@ -47,13 +53,14 @@ export default function Projects() {
                   </div>
                 </div>
                 <div className={`proj-img ${i % 2 === 0 ? `hidden` : ``}`}>
-                  <img src={e.image} alt={e.name}></img>
+                  <img src={e.image ? e.image : placeholder} alt={e.name}></img>
                 </div>
               </div>
               : null}
             </>
           ))}
 
+          {/* Show more disappears if all projects displayed */}
           <div className="show-more">
             <button className={`btn ${num  > projects.length ? `hidden` : ``}`} onClick={handleOnClick}>Show More</button>
           </div>
@@ -87,7 +94,7 @@ const projects = [
   },
   {
     name: "Student Store",
-    image: "lifetracker",
+    image: "",
     github: "https://github.com/awang2330/Student-Store",
     link: "",
     languages: ["React.js", "Node.js", "Express"],
@@ -96,16 +103,16 @@ const projects = [
   },
   {
     name: "Flixster",
-    image: "lifetracker",
+    image: "",
     github: "https://github.com/awang2330/Flixster",
-    link: "http://lifetracker-sun.surge.sh",
+    link: "",
     languages: ["HTML", "CSS", "Vanilla JS"],
     description: [
     ]
   },
   {
     name: "Khichri",
-    image: "lifetracker",
+    image: "",
     github: "",
     link: "",
     languages: ["React.js"],
@@ -114,7 +121,7 @@ const projects = [
   },
   {
     name: "Serendipity Books",
-    image: "lifetracker",
+    image: "",
     github: "",
     link: "",
     languages: ["HTML", "CSS", "PHP"],
