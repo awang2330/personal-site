@@ -1,7 +1,7 @@
 {
   "name": "portfolio-site",
   "version": "0.1.0",
-  "homepage": "https://awang2330.github.io/awang2330.github.io",
+  "homepage": "https://awang2330.github.io/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
