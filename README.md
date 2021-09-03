@@ -1,5 +1,4 @@
-# Link to Site
-[Personal Site](https://github.com/awang2330/personal-site)
+[Personal Site Link](https://awang2330.github.io/personal-site/)
 
 # Libraries Used
 [Scroll to Section](https://www.npmjs.com/package/react-router-hash-link)
